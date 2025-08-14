@@ -1,1 +1,14 @@
+   ┌───────────────┐         ┌───────────────┐
+   │  Frontend     │         │   Backend     │
+   │  (Nginx)      │         │   (MySQL)     │
+   │               │         │               │
+   └───────▲───────┘         └───────▲───────┘
+           │                         │
+   frontend-network           backend-network
+           │                         │
+           ▼                         ▼
+        ┌────────────────────────────────┐
+        │        Application Server       │
+        │ (Connected to both networks)    │
+        └────────────────────────────────┘
 
