@@ -37,6 +37,7 @@ docker network create --driver bridge webapp-network
 docker network ls
 
 **1.3 — Create Custom Network with Specific Subnet**
+
 docker network create \
   --driver bridge \
   --subnet=172.20.0.0/16 \
@@ -170,7 +171,9 @@ docker exec isolated-app ping 8.8.8.8
 **6.2 — Disconnect**
 
 docker network disconnect frontend-network app-server
+
 docker network inspect frontend-network --format='{{range .Containers}}{{.Name}}{{end}}'
+
 docker run --rm --network frontend-network alpine:latest ping -c 2 app-server
 
 
