@@ -18,7 +18,7 @@ This repository contains a complete hands-on lab for installing and configuring 
 ## 🚀 Quick Start
 ```bash
 # Clone this repository
-git clone https://github.com/<your-username>/minikube-k8s-lab.git
+git clone https://github.com/khankhelasim/minikube-k8s-lab.git
 cd minikube-k8s-lab
 
 # Follow the detailed steps
